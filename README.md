@@ -15,6 +15,7 @@ sklearn==0.21.3
 ## Usage
 
 ```bash
+git clone https://github.com/zhanglabNKU/VGAELDA.git
 cd VGAELDA
 python train.py --cv 1 --data 1
 ```
