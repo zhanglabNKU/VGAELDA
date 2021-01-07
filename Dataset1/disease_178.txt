@@ -1,0 +1,178 @@
+AIDS
+cancer
+cardiac hypertrophy
+gastric cancer
+glioma
+non-small cell lung cancer
+barretts Esophagus
+esophageal adenocarcinoma
+lung cancer
+nasopharyngeal carcinoma
+dilated cardiomyopathy
+HCV
+human spinocerebellar ataxia type 8
+Spinocerebellar ataxia type 8
+Alzheimers disease
+Inclusion body myositis
+melanoma
+colorectal cancer
+papillary thyroid carcinoma
+osteosarcoma
+breast cancer
+aging
+cervical cancer
+oesophagus cancer
+ovarian cancer
+parotid cancer
+tongue cancer
+depression
+Huntingtons disease
+psychiatric disease
+schizophrenia
+testicular cancer
+blepharophimosis syndrome
+prostat
+endometrial cancer
+carcinoma
+colon cancer
+gallbladder cancer
+esophageal squamous cell carcinoma
+acute myeloid leukemia
+abdominal aortic aneurysm
+acute lymphoblastic leukemia
+aortic aneurysm
+atherosclerosis
+basal cell carcinoma
+Cardiovascular disease
+coronary artery disease
+coronary disease
+coronary heart disease
+Diabetes
+endometriosis
+Esophageal squamous cell cancer
+familial and sporadic intracranial aneurysms
+Glaucoma
+hereditary cutaneous malignant melanoma
+intracranial aneurism
+ischemic stroke
+leukemia
+myocardial infarction
+neural system tumors syndrome
+Neurofibromatosis type 1
+periodontitis
+peripheral artery disease
+Plexiform neurofibroma
+Stroke
+tumor
+type 2 diabetes
+cat eye syndrome
+adolescent idiopathic scoliosis
+bone diseases
+postmenopausal osteoporosis
+hepatocellular carcinoma
+prostate cancer
+bipolar disorder
+panic disorder
+Pancreatic ductal adenocarcinoma
+DiGeorge syndrome
+velocardiofacial syndrome
+affective disorders
+Autism spectrum disorder
+Major depression
+chronic lymphocytic leukemia
+lymphocytic leukemia
+lymphoma
+myeloma
+myotonic dystrophy type 1
+embryonal carcinoma
+oral squamous cell carcinoma
+autoimmune disease
+B-cell neoplasms
+kidney cancer
+systemic lupus erythaematosus
+bladder cancer
+lung adenocarcinoma
+multiple myeloma
+pancreatic cancer
+renal cell carcinoma
+pseudohypoparathyroidism type Ib
+adrenocortical carcinomas
+Beckwith-Wiedemann syndrome
+biparental complete hydatidiform moles
+choricarcinoma
+chronic myeloproliferative disorders
+Congenital hyperinsulinism
+germ cell tumor
+gestational choriocarcinoma
+gestational trophoblastic diseases
+glioblastoma
+growth restriction
+hematopoiesis
+hepatocelluar carcinoma
+hyperhomocysteinemia
+infertility
+liver cancer
+Mareks disease
+Medulloblastoma
+Meningioma
+Mullerian aplasia
+myeloproliferative polycythaemia vera
+neural tube defects
+neuroblastoma
+obesity
+pheochromocytoma
+Pituitary adenoma
+Prader-Willi syndrome
+pre-eclampsia
+Silver-Russell syndrome
+trophoblastic tumor
+Wiedemann-Beckwith syndrome
+Wilms tumor
+chronic myeloid leukemia
+esophageal cancer
+renal cancer
+adenocarcinoma
+oesophageal adenocarcinoma
+epithelial ovarian cancer
+gastrointestinal cancer
+laryngeal squamous cell carcinoma
+oesophageal squamous cell carcinoma
+pancreas cancer
+rheumatoid arthritis
+small cell lung cancer
+non-functioning pituitary adenoma
+serous ovarian cancer
+transient neonatal diabetes mellitus
+multiple sclerosis
+type 1 diabetes
+narcolepsy
+decreased myogenesis
+uterus cancer
+renal cell carcinoma (RCC)
+diabetes mellitus
+clear cell renal cell carcinoma
+heroin abuse
+myelodysplastic syndrome
+nonfunctioning pituitary adenomas
+drug abuse
+myopia
+diffuse large B-cell lymphoma
+Burkitts lymphoma
+squamous-cell lung carcinomas
+Downs syndrome
+glucose metabolism disorder
+Parkinsons disease
+psoriasis
+Burkitts lymphomas
+cleft lip
+diabetic nephropathy
+Hodgkins lymphoma
+murine plasmacytomas
+rhabdomyosarcoma
+Spinocerebellar ataxia type 7
+cardiomyopathy
+Human Dilated Cardiomyopathy
+dyskeratosis congenita
+squamous carcinoma
+tongue squamous cell carcinomas
+Klinefelters syndrome
