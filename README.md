@@ -1,6 +1,6 @@
 # VGAELDA: integrating variational inference and graph autoencoders for predicting lncRNA-disease associations
 
-Code for our paper "VGAELDA: integrating variational inference and graph autoencoders for predicting lncRNA-disease associations"
+Code for our paper "VGAELDA: integrating variational inference and graph autoencoders for predicting lncRNA-disease associations".
 
 ## Requirements
 
