@@ -1,7 +1,11 @@
 import numpy as np
 import torch
+import argparse
 from sklearn.preprocessing import minmax_scale,scale
 from sklearn.metrics import roc_curve,roc_auc_score,average_precision_score,precision_recall_curve,auc
+
+def scaley(ymat):
+    return (ymat-ymat.min())/ymat.max()
 
 def set_seed(seed,cuda):
     np.random.seed(seed)
@@ -73,3 +77,4 @@ def show_auc(ymat,data):
     # plt.plot(rocdata[0],rocdata[1])
     # plt.plot(prdata[0],prdata[1])
     # plt.show()
+    return auroc,aupr

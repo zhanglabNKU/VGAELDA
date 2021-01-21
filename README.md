@@ -16,7 +16,7 @@ sklearn==0.21.3
 
 ```bash
 cd VGAELDA
-python train.py --cv 1 --data 1
+python fivefoldcv.py --data 1
 ```
 
 ## Options
@@ -34,12 +34,10 @@ parser.add_argument('--lr', type=float, default=0.01,
                     help='Learning rate.')
 parser.add_argument('--weight_decay', type=float, default=1e-5,
                     help='Weight decay (L2 loss on parameters).')
-parser.add_argument('--hidden', type=int, default=64,
+parser.add_argument('--hidden', type=int, default=256,
                     help='Dimension of representations')
 parser.add_argument('--alpha', type=float, default=0.5,
                     help='Weight between lncRNA space and disease space')
-parser.add_argument('--cv', type=int, default=1, choices=[1,2],
-                    help='Cross validation method. 1: 5-fold CV, 2: LOOCV')
 parser.add_argument('--data', type=int, default=1, choices=[1,2],
                     help='Dataset')
 

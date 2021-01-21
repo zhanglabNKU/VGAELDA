@@ -17,12 +17,10 @@ parser.add_argument('--lr', type=float, default=0.01,
                     help='Learning rate.')
 parser.add_argument('--weight_decay', type=float, default=1e-5,
                     help='Weight decay (L2 loss on parameters).')
-parser.add_argument('--hidden', type=int, default=64,
+parser.add_argument('--hidden', type=int, default=256,
                     help='Dimension of representations')
 parser.add_argument('--alpha', type=float, default=0.5,
                     help='Weight between lncRNA space and disease space')
-parser.add_argument('--cv', type=int, default=1, choices=[1,2],
-                    help='Cross validation method. 1: 5-fold CV, 2: LOOCV')
 parser.add_argument('--data', type=int, default=1, choices=[1,2],
                     help='Dataset')
 
@@ -53,6 +51,12 @@ class GNNp(nn.Module):
         yl,zl = self.gnnpl(gl,y0)
         yd,zd = self.gnnpd(gd,y0.t())
         return yl,zl,yd,zd
+
+gnnq = GNNq()
+gnnp = GNNp()
+if args.cuda:
+    gnnq = gnnq.cuda()
+    gnnp = gnnp.cuda()
 
 def criterion(output,target,msg,n_nodes,mu,logvar):
     if msg == 'disease':
@@ -103,16 +107,7 @@ def train(gnnq,gnnp,xl0,xd0,y0,epoch,alpha):
         
     return alpha*yl+(1-alpha)*yd.t()
 
-gnnq = GNNq()
-gnnp = GNNp()
-if args.cuda:
-    gnnq = gnnq.cuda()
-    gnnp = gnnp.cuda()
-
-if(args.cv==2):
-    print("Dataset {}, LOOCV".format(args.data))
-else:
-    print("Dataset {}, 5-fold CV".format(args.data))
+print("Dataset {}, LOOCV".format(args.data))
 
 ytrain = train(gnnq,gnnp,rnafeat,gdi.t(),ldi,args.epochs,args.alpha)
 
@@ -132,40 +127,9 @@ def loocv(A,alpha=0.5):
     else:
         return ymat.detach().numpy()
 
-def fivefoldcv(A,alpha=0.5):
-    A0 = A
-    N = A0.shape[0]
-    ymat = ytrain
-    lnc,dis = torch.where(A0==1)
-    idx = np.arange(N)
-    np.random.shuffle(idx)
-    res = torch.zeros_like(A)
-    for i in range(5):
-        for j in range(i*N//5,(i+1)*N//5):
-            A[lnc[idx[j]],dis[idx[j]]] = 0
-        
-        yli,_,ydi,_ = gnnp(A)
-        res = alpha*yli + (1-alpha)*ydi.t()
-        for j in range(i*N//5,(i+1)*N//5):
-            ymat[lnc[idx[j]],dis[idx[j]]] = res[lnc[idx[j]],dis[idx[j]]]
-        
-    if args.cuda:
-        return ymat.cpu().detach().numpy()
-    else:
-        return ymat.detach().numpy()
-
-def scaley(ymat):
-    return (ymat-ymat.min())/ymat.max()
-
-title = 'result--dataset'+str(args.data)+'--seed'+str(args.seed)
-
-if args.cv == 2:
-    ymat = loocv(ldi,alpha=args.alpha)
-    title += '--loocv'
-else:
-    ymat = fivefoldcv(ldi,alpha=args.alpha)
-    title += '--fivefoldcv'
-
+title = 'result--dataset'+str(args.data)
+ymat = loocv(ldi,alpha=args.alpha)
+title += '--loocv'
 ymat = scaley(ymat)
 np.savetxt(title+'.txt',ymat,fmt='%10.5f',delimiter=',')
 show_auc(ymat,args.data)
