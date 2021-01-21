@@ -146,10 +146,8 @@ def fivefoldcv(A,alpha=0.5):
         return ymat.detach().numpy()
 
 title = 'result--dataset'+str(args.data)
-
 ymat = fivefoldcv(ldi,alpha=args.alpha)
 title += '--fivefoldcv'
-
 ymat = scaley(ymat)
 np.savetxt(title+'.txt',ymat,fmt='%10.5f',delimiter=',')
 print("===Final result===")
