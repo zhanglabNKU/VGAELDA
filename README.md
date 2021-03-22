@@ -1,6 +1,6 @@
 # VGAELDA: a representation learning model based on variational inference and graph autoencoder for predicting lncRNA-disease associations
 
-Code for our paper "VGAELDA: a representation learning model based on variational inference and graph autoencoder for predicting lncRNA-disease associations"
+Code for our paper "[A representation learning model based on variational inference and graph autoencoder for predicting lncRNA-disease associations](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04073-z)"
 
 ## Requirements
 
@@ -57,3 +57,18 @@ Files in Dataset1 are listed as follow:
 - `rnafeat.txt` is the feature matrix of lncRNAs.
 
 Files in Dataset2 are defined similarly to Dataset1.
+
+## Citation
+
+```
+@article{shi2021vgaelda,
+    author={Zhuangwei Shi and Han Zhang and Chen Jin and Xiongwen Quan and Yanbin Yin},
+    title={A representation learning model based on variational inference and graph autoencoder for predicting lncRNA-disease associations},
+    journal={BMC Bioinformatics},
+    year={2021},
+    volume={22},
+    number={136},
+    pages={1-20},
+    url={https://doi.org/10.1186/s12859-021-04073-z},
+}
+```
