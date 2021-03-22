@@ -1,6 +1,6 @@
 # VGAELDA: a representation learning model based on variational inference and graph autoencoder for predicting lncRNA-disease associations
 
-Code for our paper "A representation learning model based on variational inference and graph autoencoder for predicting lncRNA-disease associations"
+Code for our paper "[A representation learning model based on variational inference and graph autoencoder for predicting lncRNA-disease associations](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04073-z)"
 
 ## Requirements
 
